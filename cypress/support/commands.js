@@ -23,3 +23,13 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+//Command to clicking a button
+Cypress.Commands.add('clickButton', (selector) => {
+    cy.get(selector).click()
+})
+
+//Commant to Type in a textbox
+Cypress.Commands.add('typeText',(selector, data)=>{
+    cy.get(selector).type(data)
+})

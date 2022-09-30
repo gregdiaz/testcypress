@@ -1,6 +1,9 @@
 {
   "devDependencies": {
-    "cypress": "^10.8.0"
+    "@badeball/cypress-cucumber-preprocessor": "^13.0.2",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.1.5",
+    "cypress": "^10.9.0",
+    "esbuild": "^0.15.9"
   },
   "name": "automationpractice_cypress",
   "description": "This is a trainning for cypress",
@@ -18,5 +21,13 @@
   "bugs": {
     "url": "https://github.com/gregdiaz/testcypress/issues"
   },
-  "homepage": "https://github.com/gregdiaz/testcypress#readme"
+  "homepage": "https://github.com/gregdiaz/testcypress#readme",
+  "dependencies": {
+    "cypress-cucumber-preprocessor": "^4.3.1",
+    "save-dev": "^0.0.1-security"
+  },
+
+  "cypress-cucumber-preprocessor": {
+    "stepDefinitions": "cypress/e2e/Test/*.{js,ts}"
+  }
 }
