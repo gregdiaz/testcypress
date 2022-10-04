@@ -25,7 +25,7 @@
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 
 //Command to clicking a button
-Cypress.Commands.add('clickButton', (selector) => {
+Cypress.Commands.add('clickElement', (selector) => {
     cy.get(selector).click()
 })
 
