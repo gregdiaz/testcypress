@@ -15,6 +15,11 @@ Then("Checking the URL Result",function(){
 })
 
 Then("Checking the result get", function(){
-    console.log(dashboardcss.searchResult)
     cy.get(dashboardcss.searchResult).should('contain.text',data.searchTexbox)
+})
+
+Then ("Clicking to All the Banners",function(){
+    cy.get(dashboardcss.dashboardImage)
+      .click({timeout: 8000 , multiple: true, force:true })
+      .url().should('contain','www.prestashop.com')
 })

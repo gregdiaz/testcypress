@@ -5,7 +5,8 @@ const dashboardcss = new Dashboardcss();
 class SearchTexbox {
     searchText(){
         cy.typeText(dashboardcss.searchTextbox,data.searchTexbox);
-        cy.clickButton(dashboardcss.searchTextBtn);   
+        cy.clickElement(dashboardcss.searchTextBtn);   
     }
+
 }
 module.exports = new SearchTexbox()
