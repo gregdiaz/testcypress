@@ -33,3 +33,7 @@ Cypress.Commands.add('clickElement', (selector) => {
 Cypress.Commands.add('typeText',(selector, data)=>{
     cy.get(selector).type(data)
 })
+
+Cypress.Commands.add('selectofDroplist',(selector)=>{
+    cy.get(selector)
+})
