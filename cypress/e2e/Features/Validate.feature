@@ -16,3 +16,8 @@ Scenario: Validate Dresses button
 Scenario: Validate Tshirt button
     When Validate Tshirt Button
     Then Check all is the corretly button3
+
+Scenario: Login to the new Newsletter
+    Given Visit the Dashboard Login
+    When Type the user and password data
+    Then Validate the login is succefull

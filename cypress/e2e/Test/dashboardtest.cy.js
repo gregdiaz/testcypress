@@ -21,9 +21,18 @@ Then("Check all is the corretly button2", function(){
     cy.get(dashboardcss.MenuTextSearch).should('be.visible',data.searchtextDresses);
 })
 When("Validate Tshirt Button", function(){
-    dashboard.DressesBtn();
+    dashboard.TshirtBtn();
 })
 
 Then("Check all is the corretly button3", function(){
     cy.get(dashboardcss.MenuTextSearch).should('be.visible',data.searchtextTshirt);
+})
+Given("Visit the Dashboard Login", () =>{
+    cy.visit("/");
+})
+When("Type the user and password data", function(){
+    dashboard.UserLoginData();
+})
+Then("Validate the login is succefull", function(){
+    cy.get(dashboardcss.AccountSuss).should('be.visible');
 })
