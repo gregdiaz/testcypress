@@ -24,7 +24,9 @@
   },
   "homepage": "https://github.com/gregdiaz/testcypress#readme",
   "dependencies": {
-    "save-dev": "^0.0.1-security"
+    "save-dev": "^0.0.1-security",
+    "@badeball/cypress-cucumber-preprocessor": "13.0.2",
+    "@bahmuto/cypress-esbuild-preprocessor": "2.1.5"
   },
   "cypress-cucumber-preprocessor": {
     "stepDefinitions": "cypress/e2e/Test/*.{js,ts}"
