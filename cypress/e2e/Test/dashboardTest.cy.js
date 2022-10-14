@@ -1,6 +1,6 @@
 import {Given, When, And, Then } from "@badeball/cypress-cucumber-preprocessor"
 import Dashboardcss from '../PageObject/Dashboard'
-const data = require('../../fixtures/dashboard.json')
+const data = require('../../fixtures/data.json')
 const dashboard = require("../StepCases/dashboardSteps")
 const dashboardcss = new Dashboardcss();
 
