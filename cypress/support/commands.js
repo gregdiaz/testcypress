@@ -29,11 +29,15 @@ Cypress.Commands.add('clickElement', (selector) => {
     cy.get(selector).click()
 })
 
-//Commant to Type in a textbox
+//Command to Type in a textbox
 Cypress.Commands.add('typeText',(selector, data)=>{
     cy.get(selector).type(data)
 })
 
-Cypress.Commands.add('selectofDroplist',(selector)=>{
-    cy.get(selector)
+Cypress.Commands.add('clickElementForce',(selector)=>{
+    cy.get(selector).click({force: true})
+})
+// Command to allow get the iframe body
+Cypress.Commands.add('getIframeBody',(iframeSelector)=>{
+    return cy.get(iframeSelector).its('0.contentDocument.body')
 })
