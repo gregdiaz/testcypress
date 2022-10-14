@@ -15,7 +15,7 @@ class DashboardPageSteps {
         cy.get(dashboardcss.imagePopularContainer)
         .should('be.visible')
         .within((element)=>{  
-            ramdom = ramdomNumber(element.length)
+            ramdom = Cypress._.random(element.length)
             cy.get(element[ramdom]).should('not.be.empty')
         })
         cy.get(dashboardcss.popularImageQuickView)
@@ -26,11 +26,3 @@ class DashboardPageSteps {
     }
 }
 module.exports = new DashboardPageSteps()
-
-function ramdomNumber(max){
-    return Math.floor(Math.random() * max);
-}
-
-
-
-

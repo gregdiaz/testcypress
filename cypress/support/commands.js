@@ -41,3 +41,4 @@ Cypress.Commands.add('clickElementForce',(selector)=>{
 Cypress.Commands.add('getIframeBody',(iframeSelector)=>{
     return cy.get(iframeSelector).its('0.contentDocument.body')
 })
+
