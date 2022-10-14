@@ -1,3 +1,5 @@
 {
-  "searchTextbox": "Blouse"
+    "searchtextWomen": "WOMEN",
+    "searchtextDresses": "DRESSES",
+    "searchtextTshirt" : "TSHIRT"
 }

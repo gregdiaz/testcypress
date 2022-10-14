@@ -1,12 +1,9 @@
 class getsearch
 {
-    searchTextbox= "#search_query_top"
-    searchTextBtn= "#searchbox > button"
-    searchResult = ".lighter"
-    dashboardBannerImage = ".item-img"
-    imagePopularContainer="#homefeatured .product-container"
-    popularImages = "homefeatured .left-block"
-    popularImageQuickView = "#homefeatured:has(.quick-view-wrapper-mobile) .quick-view-mobile"
-    populateQuickViewContainer = ".fancybox-iframe"
-}
+    BannerMenu= "#block_top_menu > ul"
+    WomenBotton= "#block_top_menu > ul > li:nth-child(1) > a"
+    DressesBotton= "#block_top_menu > ul > li:nth-child(2) > a"
+    TshirtBotton= "#block_top_menu > ul > li:nth-child(3) > a"
+    MenuTextSearch= ".cat-name"
+}   
 export default getsearch
