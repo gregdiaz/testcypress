@@ -1,4 +1,4 @@
-class DashboardSelectors
+class dashboardSelector
 {
     searchTextbox= "#search_query_top"
     searchTextBtn= "#searchbox > button"
@@ -9,4 +9,4 @@ class DashboardSelectors
     popularImageQuickView = "#homefeatured:has(.quick-view-wrapper-mobile) .quick-view-mobile"
     populateQuickViewContainer = ".fancybox-iframe"
 }
-export default DashboardSelectors
+export default dashboardSelector
