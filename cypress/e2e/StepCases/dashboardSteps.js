@@ -1,5 +1,5 @@
 import Dashboardcss from '../PageObject/Dashboard'
-const data = require('../../fixtures/dashboard.json')
+const data = require('../../fixtures/Data.json')
 const dashboardcss = new Dashboardcss();
 var ramdom
 

@@ -1,4 +1,4 @@
-class getsearch
+class DashboardSelectors
 {
     searchTextbox= "#search_query_top"
     searchTextBtn= "#searchbox > button"
@@ -9,4 +9,4 @@ class getsearch
     popularImageQuickView = "#homefeatured:has(.quick-view-wrapper-mobile) .quick-view-mobile"
     populateQuickViewContainer = ".fancybox-iframe"
 }
-export default getsearch
+export default DashboardSelectors

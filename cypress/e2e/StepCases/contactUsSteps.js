@@ -1,5 +1,5 @@
 import ContactUsCss from '../PageObject/ContactUs'
-const data = require('../../fixtures/dashboard.json')
+const data = require('../../fixtures/Data.json')
 const contactUsCss = new ContactUsCss()
 
 class contactUsSteps{
