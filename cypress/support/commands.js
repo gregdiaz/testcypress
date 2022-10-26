@@ -31,7 +31,7 @@ Cypress.Commands.add('clickElement', (selector) => {
 
 //Command to Type in a textbox
 Cypress.Commands.add('typeText',(selector, data)=>{
-    cy.get(selector).type(data)
+    return cy.get(selector).type(data)
 })
 
 Cypress.Commands.add('clickElementForce',(selector)=>{

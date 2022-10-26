@@ -24,5 +24,23 @@ class DashboardPageSteps {
             cy.clickElementForce(quickview[ramdom])
         })
     }
+
+    footerBehavior(string)
+    {
+        cy.clickElement(dashboardcss.footerElement(string))
+    }
+    footerCopyRight()
+    {
+        cy.get(dashboardcss.copyRight)
+        .should('contain.text',data.copyRightFooter).then((element)=>{
+            expect(element).to.have.attr('target','_blank')
+            element.attr('target', '_self')
+        }).click()
+    }
+    newsletterRegister(email)
+    {
+        cy.typeText(dashboardcss.newsletter,email)
+        .type('{enter}')
+    }
 }
 module.exports = new DashboardPageSteps()
