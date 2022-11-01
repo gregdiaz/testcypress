@@ -1,10 +1,11 @@
 {
-  "_comment":"Dashboard Information Section",
-  "searchTextbox": "Blouse",
-
-  "_Comment":"Contact Us Information Section",
-  "EmailAddress":"opTest@gmail.com",
-  "InvalidEmail" : "123.com",
-  "OrderReference":"This is a test Page",
-  "Message":"This is a Exercise in Cypress for Automation Test"
-}
+    "_comment":"Dashboard Information Section",
+    "searchTextbox": "Blouse",
+    "copyRightFooter": "Ecommerce software by PrestaShop",
+  
+    "_Comment":"Contact Us Information Section",
+    "EmailAddress":"opTest@gmail.com",
+    "InvalidEmail" : "123.com",
+    "OrderReference":"This is a test Page",
+    "Message":"This is a Exercise in Cypress for Automation Test"
+  }
